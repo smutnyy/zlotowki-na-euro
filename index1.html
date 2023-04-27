@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script> 
+
+        function dzielenie()
+        {
+            var a = parseFloat(document.getElementById("euro").value);
+            var b = parseFloat(document.getElementById("zloty").value);
+            document.getElementById("wynik").innerHTML = b / a;
+        }
+
+    </script>
+</head>
+
+<body>
+  <h1> Prosty kalkulator </h1> 
+  <p> Kurs euro </p>
+  <input type="text" id="euro">
+  <p> Ile zlotowek </p>
+  <input type="text" id="zloty">
+  <div id="wynik">PO PRZELICZNIU</div>
+
+  <button onclick="dzielenie()">/</button>
+
+</body>
+</html>
